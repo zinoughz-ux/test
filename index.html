@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TCF Canada - Expression écrite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1> TCF CANADA – Simulateur Expression écrite</h1>
+<p id="timer">⏱️ Temps restant : 60:00</p>
+
+<div class="task">
+    <h2>Tâche 1</h2>
+      <p>Répondez à votre ami pour lui expliquer pourquoi vous ne pouvez pas venir ce week-end.</p> 
+    </p>
+    <textarea id="task1"></textarea>
+    <p>Mots : <span id="count1">0</span> (60–120)</p>
+</div>
+
+<div class="task">
+    <h2>Tâche 2</h2>
+    <p>
+        Vous écrivez un courriel à votre propriétaire pour signaler un problème dans votre logement.
+    </p>
+    <textarea id="task2"></textarea>
+    <p>Mots : <span id="count2">0</span> (120–150)</p>
+</div>
+
+<div class="task">
+    <h2>Tâche 3</h2>
+    <p>
+        Pensez-vous que le télétravail est une bonne solution ?
+        Donnez votre opinion avec des arguments.
+    </p>
+    <textarea id="task3"></textarea>
+    <p>Mots : <span id="count3">0</span> (120–180)</p>
+</div>
+
+<button onclick="finish()">Terminer l’épreuve</button>
+
+<div id="result" class="hidden">
+    <h2>📊 Résultat estimé</h2>
+    <p id="feedback"></p>
+    <p id="level"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<button onclick="correctIA()">🧠 Correction IA</button>
+
+<div id="ia-result" class="hidden">
+    <h2>🧠 Analyse IA</h2>
+    <pre id="ia-feedback"></pre>
+</div>
